@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Platform</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Company Profile</title>
+    <meta name="description" content="Company Profile">
+  </head>
+  <body>
+    <nav class="nav-list">
+      <img
+        src="./assets/FA_DIGICAMP_LOGO_WHITE.webp"
+        alt="digicamp logo"
+        class="logo"
+        width="auto"
+        height="auto"
+      />
+      <div>
+        <a href="/login.html"><button class="login-button">Masuk</button></a>
+        <button class="signup-button">Daftar</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <img
+        src="./assets/health.svg"
+        alt="health"
+        class="hero-image"
+        width="auto"
+        height="auto"
+      />
+      <article class="hero-article">
+        <h1 class="hero-title">Dexa Group</h1>
+        <p class="hero-text">
+          Nama Dexa terinspirasi dari bahasa Yunani δέκα, berarti 10—sebuah
+          simbol universal dari kesempurnaan. Saat ini, kami terus menjaga
+          keberlanjutan kesehatan di Indonesia dan dunia, bagi jutaan orang di
+          14 negara yang menjadi tujuan produk kami, Dexa bermakna kualitas.
+        </p>
+        <button class="about-button">Tentang Kami</button>
+      </article>
+    </section>
+
+    <section class="lists">
+      <h1 class="list-title">Perusahaan Kami</h1>
+      <div class="feature-left">
+        <img
+          src="./assets/dexa-medica.webp"
+          alt="dexa medica building"
+          class="hero-image-2"
+          data-aos="fade-up"
+        />
+        <article class="hero-article" data-aos="fade-up" data-aos-delay="300">
+          <h1 class="hero-title">Dexa Medica</h1>
+          <p class="hero-text">
+            Dexa Medica, salah satu perusahaan farmasi terbesar di Indonesia,
+            telah secara konsisten menggunakan kemampuan penelitiannya yang
+            canggih untuk memprioritaskan kebutuhan kesehatan masyarakat
+            Indonesia.
+          </p>
+          <button class="about-button">Selengkapnya</button>
+        </article>
+      </div>
+
+      <div class="feature-right">
+        <article class="hero-article" data-aos="fade-up">
+          <h1 class="hero-title">Ferron</h1>
+          <p class="hero-text">
+            Ferron Par Pharmaceuticals didirikan untuk mendukung pertumbuhan
+            bisnis Dexa Group, dengan menyediakan kemampuan produksi,
+            pengembangan, dan meningkatkan pemasaran. Dalam waktu empat tahun
+            sejak didirikan, Ferron memiliki pertumbuhan bisnis yang cepat dan
+            masuk dalam 20 perusahaan farmasi terbesar di Indonesia.
+          </p>
+          <button class="about-button">Selengkapnya</button>
+        </article>
+        <img
+          src="./assets/ferron.webp"
+          alt="ferron building"
+          class="hero-image-2"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        />
+      </div>
+
+      <div class="feature-left">
+        <img
+          src="./assets/fonko.webp"
+          alt="fonko building"
+          class="hero-image-2"
+          data-aos="fade-up"
+        />
+        <article class="hero-article" data-aos="fade-up" data-aos-delay="300">
+          <h1 class="hero-title">Fonko</h1>
+          <p class="hero-text">
+            Fonko International didirikan pada tahun 2010 untuk memproduksi dan
+            menyediakan obat-obatan kanker atau produk onkologi yang berkualitas
+            ke seluruh dunia. Fasilitas produksi yang berteknologi tinggi dan
+            memiliki tingkat kepatuhan yang mutakhir terhadap regulasi global
+            memungkinkan Fonko untuk memproduksi obat kanker dengan bahan baku
+            aktif (API) hingga Occupational Exposure Band of 5 (peringkat
+            tertinggi) yang berarti Fonko bisa memproduksi obat kanker hingga
+            level paling toksik.
+          </p>
+          <button class="about-button">Selengkapnya</button>
+        </article>
+      </div>
+
+      <div class="feature-right">
+        <article class="hero-article" data-aos="fade-up">
+          <h1 class="hero-title">Beta Pharmacon</h1>
+          <p class="hero-text">
+            Beta Pharmacon merupakan kelompok usaha Dexa Group yang berperan dan
+            berkontribusi menyediakan obat berkualitas dan terjangkau, untuk
+            mendukung pemerintah dalam menyukseskan program Jaminan Kesehatan
+            Nasional (JKN).
+          </p>
+          <button class="about-button">Selengkapnya</button>
+        </article>
+        <img
+          src="./assets/beta-pharmacon.webp"
+          alt="beta pharmacon building"
+          class="hero-image-2"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer-list">
+        <li>TENTANG</li>
+        <li>AKTIVITAS</li>
+        <li>PRODUK</li>
+        <li>PERUSAHAAN</li>
+        <li>KONTAK</li>
+      </ul>
+      <div class="footer-text">
+        <p>© 2024 Digicamp</p>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
