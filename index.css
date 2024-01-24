@@ -66,7 +66,9 @@ nav {
   padding: 0.75rem;
   border: 0px solid;
   border-radius: 0.5rem;
-  background-color: #ef8a1d;
+  background-color: transparent;
+  color:white;
+  font-weight: 800;
   margin-right: 20px;
 }
 
@@ -74,8 +76,11 @@ nav {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.75rem;
-  border: 0px solid #000;
+  border: 0.5px solid #fff;
   border-radius: 0.5rem;
+  background-color: transparent;
+  color:white;
+  font-weight: 800;
 }
 
 .hero {
@@ -110,6 +115,7 @@ nav {
   font-size: 2.25rem;
   font-weight: 900;
 }
+
 .hero-text {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -122,7 +128,13 @@ nav {
   letter-spacing: 1.5px;
   border: 0px solid;
   border-radius: 0.5rem;
-  background-color: #ef8a1d;
+  background-color: #a82a22;
+  color: white;
+}
+
+.hero-button {
+  background-color: #fff;
+  color: #a82a22;
 }
 
 .lists {
