@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to React</title>
+		<meta name="description" content="Introduction to React Article">
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <nav class="nav-list">
+      <div class="nav-menu" onclick="openNav()">
+        <svg
+          class="burger"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+        <img
+          src="./assets/FA_DIGICAMP_LOGO_WHITE.webp"
+          alt="digicamp logo"
+          class="logo"
+					width="auto"
+        	height="auto"
+        />
+      </div>
+
+      <img
+        src="https://api.dicebear.com/7.x/thumbs/svg?seed=Bob?backgroundColor=#ef8a1d"
+        alt="avatar"
+        class="avatar"
+      />
+    </nav>
+
+    <section class="learning">
+      <div class="sidebar">
+        <div class="collapsible">
+          <h3 class="material-title">1. Introduction to React</h3>
+          <div class="chevron" id="chevron"></div>
+        </div>
+
+        <div class="content">
+          <a href="/learning.html"
+            ><div class="material">
+              <p>Introduction to React</p>
+							<label for="1"></label>
+              <input type="checkbox" id="1" name="1" value="1" /></div
+          ></a>
+
+          <a href="/learning-pdf.html"
+            ><div class="material">
+              <p>Introduction to React</p>
+							<label for="2"></label>
+              <input type="checkbox" id="2" name="2" value="2" /></div
+          ></a>
+          <a href="/learning-video.html"
+            ><div class="material">
+              <p>Introduction to React</p>
+							<label for="3"></label>
+              <input type="checkbox" id="3" name="3" value="3" /></div
+          ></a>
+        </div>
+      </div>
+
+      <div class="learning-article">
+        <article>
+          <h1>Introduction to React</h1>
+
+          <br />
+
+          <h2>Creating and nesting components</h2>
+          <p>
+            React apps are made out of components. A component is a piece of the
+            UI (user interface) that has its own logic and appearance. A
+            component can be as small as a button, or as large as an entire
+            page. React components are JavaScript functions that return markup:
+          </p>
+          <pre class="code"><code>function MyButton() {
+  return (
+    &lt;button&gt;I'm a button&lt;/button&gt;
+  );
+}</code></pre>
+          <p>
+            Now that you’ve declared MyButton, you can nest it into another
+            component:
+          </p>
+          <pre class="code"><code>export default function MyApp() {
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Welcome to my App&lt;/h1&gt;
+      &lt;MyButton /&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+          <p>
+            Notice that <MyButton /> starts with a capital letter. That’s how
+            you know it’s a React component. React component names must always
+            start with a capital letter, while HTML tags must be lowercase.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div id="sidenav" class="sidenav">
+      <div onclick="closeNav()">
+        <svg
+          class="close"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+
+      <div class="drawer">
+        <div class="collapsible">
+          <h3 class="material-title">1. Introduction to React</h3>
+          <div class="chevron" id="chevron-in"></div>
+        </div>
+
+        <div class="content">
+          <a href="/learning.html"
+            ><div class="material">
+              <p>Introduction to React</p>
+							<label for="4"></label>
+              <input type="checkbox" id="4" name="4" value="1" /></div
+          ></a>
+
+          <a href="/learning-pdf.html"
+            ><div class="material">
+              <p>Introduction to React</p>
+							<label for="5"></label>
+              <input type="checkbox" id="5" name="5" value="2" /></div
+          ></a>
+          <a href="/learning-video.html"
+            ><div class="material">
+              <p>Introduction to React</p>
+							<label for="6"></label>
+              <input type="checkbox" id="6" name="6" value="3" /></div
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
